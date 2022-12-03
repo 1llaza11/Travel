@@ -1,0 +1,41 @@
+@mixin between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin around{
+  display: flex;
+  align-items: center;
+  justify-content:space-around ;
+}
+@mixin evenly{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@mixin btn1{
+  width: 132px;
+  height: 44px;
+  background: 0;
+  border: 1px solid #FB8F1D;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0a0a;
+}
+@mixin btn2{
+  width: 132px;
+  height: 44px;
+  background: #FB8F1D;
+  border: 1px solid #FB8F1D;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

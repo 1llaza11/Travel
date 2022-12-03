@@ -1,0 +1,231 @@
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #hero{
+    .hero{
+      &--img00{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #card{
+    .card{
+      &--tittle{
+        h1{
+          font-size: 30px;
+        }
+        p{
+          width: 300px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  #blocks{
+    .blocks{
+      &--general{
+        padding: 0 60px;
+        flex-wrap: wrap;
+        width: 83%;
+      }
+    }
+  }
+  #sunny{
+    .sunny{
+      img{
+        width: 50%;
+      }
+    }
+  }
+  #general{
+    .general{
+      &--tit2{
+        padding: 0 20%;
+        flex-wrap: wrap;
+        width: 65%;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 992px) {
+  #hero{
+    .hero{
+     &--img00{
+       width: 40%;
+
+      }
+    }
+  }
+  #card{
+    .card{
+      &--tittle{
+        h1{
+          font-size: 30px;
+        }
+        p{
+          width: 280px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 768px) {
+  #hero{
+    .hero{
+      flex-direction: column;
+    }
+  }
+  #card{
+    .card{
+      &--img999{
+        width: 50%;
+      }
+      flex-direction: column;
+      &--tittle{
+        p{
+          width: 450px;
+          font-size: 18px;
+        }
+
+      }
+
+    }
+  }
+  #blocks{
+    .blocks{
+      &--nav{
+        padding: 20px 0;
+      }
+    }
+  }
+  #sunny{
+    .sunny{
+      flex-direction: column;    }
+  }
+  #about{
+    .about{
+      flex-direction: column;    }
+  }
+}
+
+@media (max-width: 576px) {
+  #header{
+    .header{
+      a{
+        display: none;
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 451px) {
+  #hero{
+    .hero{
+      &--tittle{
+        margin-left: 30px;
+        &__card{
+          width: 200px;
+        }
+      }
+    }
+  }
+  #blocks{
+    .blocks{
+      &--general{
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #card{
+    .card{
+      &--tittle{
+        p{
+          width: 322px;
+
+        }
+      }
+    }
+  }
+  #sunny{
+    .sunny{
+      &--nav{
+        p{
+          width: 374px;
+        }
+      }
+    }
+  }
+  #about{
+    .about{
+      &--nav{
+        p{
+          width: 322px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  #header{
+    .header{
+      button{
+        display: none;
+      }
+    }
+  }
+  #hero{
+    .hero{
+      &--tittle{
+        h1{
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  #sunny{
+    .sunny{
+      &--nav{
+        p{
+          width: 310px;
+
+        }
+      }
+
+    }
+  }
+  #about{
+    .about{
+      p{
+        width: 250px;
+      }
+      &--img55{
+        margin: 20px 0;
+        width: 80%;
+      }
+    }
+  }
+  #general{
+    .general{
+      &--tit2{
+        padding: 0 10%;
+      }
+    }
+  }
+}

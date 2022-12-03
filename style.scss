@@ -1,0 +1,355 @@
+@import "mixin";
+@import "variables";
+@import "reset";
+
+#header{
+  .header{
+    padding: 40px 0;
+    @include between();
+    &--nav{
+      @include between();
+    a{
+      margin: 0 20px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #B8BECD;
+      transition: .4s;
+      &:hover{
+        color: #202336;
+        font-weight: 900;
+      }
+    }
+      &__left{
+        button{
+          @include btn1();
+          margin: 0 20px 0 20px;
+
+        }
+      }
+      &__right{
+        button{
+          @include btn2();
+
+        }
+      }
+    }
+  }
+}
+
+#hero{
+  .hero{
+    position: relative;
+    @include between();
+    &--tittle{
+      &__plus{
+        position: absolute;
+        top: 20%;
+        left: 30%;
+      }
+      h1{
+        padding-bottom: 20px;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 80px;
+        color: #202336;
+      }
+      p{
+        padding-bottom: 20px;
+        font-weight: 600;
+        font-size: 22px;
+        color: #202336;
+      }
+      &__liner{
+        width: 32px;
+        background: #202336;
+      }
+      &__circle{
+        position: absolute;
+        left: -3%;
+      }
+      &__card{
+        padding-bottom: 40px;
+        width: 500px;
+        select{
+          outline: none;
+          width: 220px;
+          height: 52px;
+          margin: 30px 20px 0 0;
+        }
+      }
+      button{
+        @include btn2();
+      }
+      &__circle2{
+        position: absolute;
+        right: 60%;
+      }
+
+    }
+  }
+}
+
+#card{
+  .card{
+    position: relative;
+    @include between();
+    &--tittle{
+
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+      }
+      p{
+        padding: 20px 0;
+        width: 450px;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 30px;
+        color: #7D7987;
+      }
+      &__circle3{
+        position: absolute;
+        top: 65%;
+        right: 15%;
+      }
+      button{
+
+        @include btn2();
+      }
+    }
+  }
+}
+
+#blocks{
+  padding-bottom: 70px;
+  .blocks{
+    &--tittle{
+      padding: 20px 0;
+      @include between();
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        color: #000000;
+      }
+      select{
+        color: #FB8F1D;
+        background: 0;
+        outline: none;
+        border: none;
+      }
+    }
+    &--nav{
+      position: relative;
+      &__tit{
+        position: absolute;
+        top:90%;
+        width: 120px;
+        height: 56px;
+        background: #FFFFFF;
+        border-radius: 0 6px 0 0;
+        h1{
+          font-weight: 600;
+          font-size: 17px;
+          line-height: 25px;
+          display: flex;
+          align-items: center;
+          color: #042521;
+        }
+      }
+    }
+
+    &--general{
+
+      @include around();
+
+
+
+    }
+  }
+}
+
+
+#sunny{
+  .sunny{
+    @include between();
+    &--nav{
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #000000;
+      }
+      p{
+        padding: 20px 0;
+        width: 450px;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 30px;
+        color: #7D7987;
+      }
+      button{
+        @include btn2();
+      }
+    }
+  }
+
+}
+
+#about{
+  padding: 90px 0;
+  .about{
+    position: relative;
+    @include between();
+    width: 90%;
+    &--nav{
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        color: #000000;
+      }
+      &__stars{
+        padding: 50px 0;
+        display: flex;
+        &--star{
+          clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+          width: 25px;
+          height: 25px;
+          background: yellow;
+          margin-right: 10px;
+        }
+      }
+      p{
+        padding: 20px 0;
+        width: 450px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        color: #000000;
+      }
+      h2{
+        font-weight: 700;
+        font-size: 22px;
+        color: #000000;
+      }
+      h5{
+        font-weight: 400;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.85);
+      }
+    }
+    &--tit2{
+      position: absolute;
+      width: 132px;
+      right: -1%;
+      bottom: -1%;
+      height: 60px;
+      background: #FFFFFF;
+      border-radius: 16px 0 0 0;
+      img{
+        padding: 10px 10px 0;
+      }
+    }
+  }
+}
+
+#general{
+  .general{
+    &--tittle{
+      @include between();
+      h1{
+        font-weight: 700;
+        font-size: 36px;
+        color: #000000;
+      }
+      select{
+        outline: none;
+        border: none;
+        color: #FB8F1D;
+      }
+    }
+    &--tit2{
+      @include between();
+      &__nav{
+        padding: 30px 0;
+        h1{
+          font-weight: 700;
+          font-size: 19px;
+          line-height: 30px;
+          color: #000000;
+        }
+        p{
+          padding: 20px 0;
+          width: 266px;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 26px;
+          color: #7D7987;
+        }
+        h5{
+          font-weight: 600;
+          font-size: 15px;
+          color: #FB8F1D;
+        }
+      }
+
+
+    }
+  }
+}
+
+#footer{
+  background: #F9F9FB;
+  min-height: 50vh;
+  .footer{
+    padding: 50px 0 ;
+    @include between();
+    flex-wrap: wrap;
+    &--nav{
+      p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 38px;
+        color: #848484;
+      }
+    }
+    &--tit9{
+      p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 38px;
+        color: #848484;
+      }
+    }
+    &--tittle{
+      p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 38px;
+        color: #848484;
+      }
+    }
+    &--tit8{
+      p{
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 38px;
+        color: #848484;
+      }
+    }
+    &--hr{
+      margin-bottom: 40px;
+      width: 90%;
+      height: 0.6px;
+      background: #C4C4C4;
+    }
+
+  }
+  center{
+    img{
+      margin: 0 20px;
+    }
+  }
+
+}
